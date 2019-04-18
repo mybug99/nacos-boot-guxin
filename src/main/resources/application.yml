@@ -1,0 +1,18 @@
+server:
+  port: 8080
+  server-addr: 127.0.0.1:8848
+  namespace: 4f4696b7-ef04-48af-901e-ece0377325bc
+spring:
+  application:
+    name: nacos-boot
+nacos:
+  config:
+    server-addr: ${server.server-addr}
+    namespace: ${server.namespace}
+  discovery:
+    server-addr: ${server.server-addr}
+    namespace: ${server.namespace}
+
+
+
+hey: hello
